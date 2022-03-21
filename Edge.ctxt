@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Edge
+comment0.text=\r\n\ Connects\ locations.\r\n
+comment1.params=l1\ l2
+comment1.target=Edge(Location,\ Location)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Edge\r\n
+comment2.params=
+comment2.target=boolean\ wasVisited()
+comment3.params=n
+comment3.target=void\ setVisited(boolean)
+comment4.params=
+comment4.target=java.util.ArrayList\ vertices()
+comment5.params=
+comment5.target=int\ getDistance()
+comment6.params=w
+comment6.target=void\ show(greenfoot.World)
+comment7.params=e
+comment7.target=int\ compareTo(Edge)
+numComments=8

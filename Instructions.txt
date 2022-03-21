@@ -1,0 +1,61 @@
+1. Build a new Greenfoot program with Location actor. The World image here 
+is perfectly fine, if you'd like another image feel free. This image is 
+961 x 604. The Location actor will use the red dot, or one of your own. 
+Locations should have a good toString that displays their coordinate (x,y), 
+a good hashCode, and a good equals which will be true only if the x and y 
+coordinates match between two locations.
+
+2. Write an Edge class - it is not a World nor is it an Actor. Edges keep 
+track of their two vertices (Locations) which should be sent in during the 
+constructor, have getters for the two vertices, have a getDistance method 
+which returns how far apart the two vertices are (distance formula). Edges 
+should also be Comparable against other Edges, where one Edge is smaller 
+than another if it has a smaller distance value. Finally, Edges should 
+include the following method, which I will give you. The method allows an 
+Edge to be shown on a World in Greenfoot even though it isn't an actor nor 
+does it have an image.
+
+    public void show(World w ) 
+    {
+        GreenfootImage bg = w.getBackground();
+        bg.setColor( Color.ORANGE );
+        bg.drawLine( vertex1.getX(), vertex1.getY(), 
+                     vertex2.getX(), vertex2.getY() );
+    }  
+
+3. Graph Theory Time!
+a) Write a method to fill the world with some number of random Locations. 
+Locations should only go on land, never in the water. This method should 
+take in a number of locations to build - it would also be nice if no two 
+locations are right next to each other - but you can decide to add that 
+yourself or not and you can decide how close is too close.
+
+b) Write a method which builds all possible Edges on the screen (a complete 
+graph) and displays each. Never build an Edge that connects a location to 
+itself. The method should return some data structure of Edges. The world 
+method getObjects(Location.class) will return a List of all the Locations 
+on the screen and will likely be useful for this question. Also, write a 
+method called drawEdges which takes in a data structure of Edges and shows 
+each of them on the screen.
+
+c) Write a method called buildRandomConnections, which takes in an int 
+parameter (N). The method should build (N) edges between different Locations 
+on the screen. No edge should connect a location to itself, nor should 
+multiple edges ever be built that connect two locations to each other 
+multiple times. The method should return some data structure of Edges it built.
+
+d) Write a method called formsCycle, which takes in a Collection of Edges 
+and a single Edge, and determines if that single Edge would form a cycle if 
+added to the Collection of Edges.
+
+e) Write Prim's algorithm to form the minimum Spanning tree.
+
+f) - May be Optional, we will see - Write Kruskal's algorithm to form the 
+minimum Spanning tree.
+
+g) - May be Optional, we will see - Write Dijkstra's algorithm. This particular 
+one will need to use your buildRandomConnections algorithm to set up some edges 
+but not all. Best version of this program would allow you to click one location, 
+then click a second location, and perform Dijkstra's to determine the minimum 
+distance to get from one to the other. Your choice on how it visually shows 
+the shortest path.

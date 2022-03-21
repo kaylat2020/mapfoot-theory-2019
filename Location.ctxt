@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=Location
+comment0.text=\r\n\ Creates\ seeable\ locations.\r\n
+comment1.params=x\ y
+comment1.target=Location(int,\ int)
+comment1.text=\r\n\ Builds\ a\ new\ dot\ and\ places\ it\ on\ the\ map.\r\n
+comment2.params=
+comment2.target=int\ hashCode()
+comment2.text=\r\n\ Creates\ a\ unique\ hash\ code\ based\ on\ this\ Location\r\n\ @returns\ int\r\n
+comment3.params=l
+comment3.target=boolean\ equals(Location)
+comment3.text=\r\n\ Compares\ two\ Locations\ and\ determines\ if\ they\ are\ equal\ based\r\n\ on\ a\ threshold\ distance\ or\ precise\ point.\r\n
+comment4.params=radius
+comment4.target=java.util.List\ getAllWithin(int)
+comment5.params=
+comment5.target=boolean\ visited()
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment6.text=\r\n\ @returns\ String\r\n
+numComments=7
