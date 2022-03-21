@@ -1,12 +1,8 @@
-------------------------------------------------------------------------
-This is the project README file. Here, you should describe your project.
-Tell the reader (someone who does not know anything about this project)
-all he/she needs to know. The comments should usually include at least:
-------------------------------------------------------------------------
-
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
-HOW TO START THIS PROJECT:
-AUTHORS:
-USER INSTRUCTIONS:
+PROJECT TITLE: Mapfoot Theory
+PURPOSE OF PROJECT: Implement shortest path algorithms using graph theory
+VERSION or DATE: 2019
+HOW TO START THIS PROJECT: Have Greenfoot installed, copy repo, open project.greenfoot
+AUTHORS: Kayla Tucker
+USER INSTRUCTIONS: 
+  Right click -> create vertices -> Right click -> Run Algorithm
+  Reset in between
